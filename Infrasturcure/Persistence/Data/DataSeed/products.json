@@ -1,0 +1,57 @@
+[
+  {
+    "Id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "SKU": "LAP-HP-15-8-256",
+    "Name": "HP 15\" Laptop 8GB 256SSD",
+    "Description": "Entry-level laptop suitable for office and study use.",
+    "PurchasePrice": 18000,
+    "SalePrice": 21000,
+    "Unit": "pcs",
+    "ReorderLevel": 5,
+    "IsActive": true
+  },
+  {
+    "Id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "SKU": "MOU-LOGI-M185",
+    "Name": "Logitech M185 Wireless Mouse",
+    "Description": "Wireless optical mouse, USB nano receiver.",
+    "PurchasePrice": 250,
+    "SalePrice": 350,
+    "Unit": "pcs",
+    "ReorderLevel": 20,
+    "IsActive": true
+  },
+  {
+    "Id": "cccccccc-cccc-cccc-cccc-cccccccccccc",
+    "SKU": "KEY-REDRAGON-K552",
+    "Name": "Redragon K552 Mechanical Keyboard",
+    "Description": "Mechanical gaming keyboard with red switches.",
+    "PurchasePrice": 700,
+    "SalePrice": 900,
+    "Unit": "pcs",
+    "ReorderLevel": 10,
+    "IsActive": true
+  },
+  {
+    "Id": "dddddddd-dddd-dddd-dddd-dddddddddddd",
+    "SKU": "MON-SAMSUNG-24",
+    "Name": "Samsung 24\" FHD Monitor",
+    "Description": "24 inch full HD LED monitor.",
+    "PurchasePrice": 3200,
+    "SalePrice": 3800,
+    "Unit": "pcs",
+    "ReorderLevel": 7,
+    "IsActive": true
+  },
+  {
+    "Id": "eeeeeeee-eeee-eeee-eeee-eeeeeeeeeeee",
+    "SKU": "CHA-OFFICE-BLACK",
+    "Name": "Ergonomic Office Chair",
+    "Description": "Adjustable ergonomic office chair with wheels.",
+    "PurchasePrice": 1800,
+    "SalePrice": 2300,
+    "Unit": "pcs",
+    "ReorderLevel": 8,
+    "IsActive": true
+  }
+]

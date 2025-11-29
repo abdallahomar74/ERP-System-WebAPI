@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pQXMdaxUhuY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\TAG\\source\\repos\\ERPSystem.Web\\Infrasturcure\\Presentation\\Presentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TAG\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
