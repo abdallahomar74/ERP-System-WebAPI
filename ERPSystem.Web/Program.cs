@@ -1,11 +1,6 @@
-
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Persistence.Data;
-using Service;
-using Persistence;
 using ERPSystem.Web.Extensions;
-using System.Threading.Tasks;
+using Persistence;
+using Service;
 
 
 namespace ERPSystem.Web
@@ -17,31 +12,34 @@ namespace ERPSystem.Web
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            
+
+            #region Services
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+            builder.Services.AddSwaggerServices();
             builder.Services.AddApplicationServices();
             builder.Services.AddInfrastructureServices(builder.Configuration);
 
+            #endregion
 
             var app = builder.Build();
-            await app.SeedDataBaseAsync();
 
-            // Configure the HTTP request pipeline.
+
+            #region MiddleWares
+            await app.SeedDataBaseAsync();
+            app.UseCustomExceptionMiddleWare();
             if (app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                app.UseSwaggerMiddleWare();
             }
 
             app.UseHttpsRedirection();
-
+            app.UseStaticFiles();
+            app.UseRouting();
             app.UseAuthorization();
 
 
             app.MapControllers();
+            #endregion
 
             app.Run();
         }
